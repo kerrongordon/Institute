@@ -18,9 +18,6 @@ a {
     color: $spacer-background-color;
 }
 
-.menu-bar-close-icon {
-    display: none;
-}
 
 .logo {
 
@@ -54,7 +51,6 @@ a {
 }
 
 .menu-bar {
-    overflow: hidden;
     background-color: $footer-background-color;
     color: $font-color-w;
 }
@@ -99,6 +95,72 @@ a {
 .hfeed {
     //background-color: $background-color-l-w;
 }
+
+
+
+//contact fourm 
+
+div.wpcf7 {
+    margin: 50px 0;
+}
+
+.wpcf7 {
+    font-style: italic;
+
+    .your-name {
+
+        input {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            color: $font-color;
+        }
+    }
+    
+    .your-email {
+
+        input {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            color: $font-color;
+        }
+    }
+
+    .your-subject {
+
+        input {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            color: $font-color;
+        }
+    }
+    
+    .your-message {
+
+        .wpcf7-textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            color: $font-color;
+        }
+    }
+
+    .wpcf7-submit {
+        background-color: $footer-background-color;
+        border: solid 1px rgba(0, 0, 0, 0.42);
+        padding: 15px 40px;
+        color: $font-color-w;
+
+        &:hover {
+            background-color: $spacer-background-color;
+        }
+
+    }
+
+}
+
 
 // ---------------------------------------------------- //
 //                        footer                        //

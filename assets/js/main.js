@@ -6,8 +6,8 @@ $( document ).ready(function() {
 function moblieMenu() {
 	//$('.menu-bar-close-icon').hide();
 
-    $('.menu-bar-icon').on('click', function(){
-        $('.main-menu').addClass('showmenu zoomIn animated');
+    $('.menu-toggle').on('click', function(){
+        $('.menu-menu-1-container').toggleClass('showmenu zoomIn animated');
         
 
         $('.menu-bar-icon').hide();
@@ -15,7 +15,7 @@ function moblieMenu() {
     });
 
     $('.menu-bar-close-icon').on('click', function(){
-        $('.main-menu').removeClass('showmenu zoomIn animated');
+        $('.menu-menu-1-container').removeClass('showmenu zoomIn animated');
         
 
         $('.menu-bar-close-icon').hide();
@@ -35,7 +35,7 @@ function googlemap() {
 
     //google map custom marker icon - .png fallback for IE11
     var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-    var marker_url = ( is_internetExplorer11 ) ? 'assets/img/cd-icon-location.png' : 'assets/img/cd-icon-location.svg';
+    var marker_url = ( is_internetExplorer11 ) ? 'http://localhost:8080/wordpress/wp-content/themes/tamcc/assets/img/cd-icon-location.png' : 'http://localhost:8080/wordpress/wp-content/themes/tamcc/assets/img/cd-icon-location.svg';
         
     //define the basic color of your map, plus a value for saturation and brightness
     var main_color = '#2d313f',

@@ -1,19 +1,147 @@
-.main-menu {
-	width: auto;
+/*--------------------------------------------------------------
+ Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
 
-	ul {
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
 
-		li {
-			display: inline-block;
-			margin: 15px;
-			list-style: none;
-			text-align: center;
+.main-navigation li {
+	float: left;
+	position: relative;
+}
 
-			a {
-				color: $font-color;
-				text-decoration: none;
-				font-size: $font-size;
-			}
-		}
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+	color: $font-color;
+	font-size: $font-size;
+}
+
+.main-navigation ul ul {
+	background: $footer-background-color;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul ul li {
+
+}
+
+.main-navigation li:hover > a {
+	background-color: $copyright-background-color;
+}
+
+.main-navigation ul ul :hover > a {
+	background-color: $spacer-background-color;
+}
+
+.main-navigation ul ul a:hover {
+	background-color: $spacer-background-color;
+}
+
+.main-navigation ul li:hover > ul {
+	left: auto;
+}
+
+.main-navigation ul ul li:hover > ul {
+	left: 100%;
+}
+
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+}
+
+/* Small menu */
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 960px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
 	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+
+.widget-area {
+
+	.search-form {
+		float: right;
+
+		.screen-reader-text {
+			display: none;
+		}
+
+		.search-field {
+			background-color: $background-color-w;
+			padding: 10px;
+			color: $font-color-w;
+			margin: 10px 0;
+			float: left;
+			border: none;
+		}
+
+		.search-submit {
+			background-color: $spacer-background-color;
+			padding: 10px;
+			color: $font-color-w;
+			float: right;
+			margin: 10px 0;
+			border: none;
+		}
+
+	}
+
+	aside {
+		clear: both;
+	}
+
 }

@@ -25,13 +25,9 @@
         <div class="container">
             <div class="logo-bar">
                 <h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                <span class="mobile-menu-button">
-                    <i class="fa fa-times-circle fa-3x menu-bar-close-icon"></i>
-                    <i class="fa fa-bars fa-3x menu-bar-icon"></i>
-                </span>
             </div>
-            	<!--<button class="menu-toggle"><?php _e( 'Primary Menu', 'tamcc' ); ?></button>-->
-                <nav class="main-menu">
+                <nav id="site-navigation" class="main-navigation main-menu" role="navigation">
+                    <button class="menu-toggle"><?php _e( '<i class="fa fa-bars fa-3x"></i>', 'tamcc' ); ?></button>
                     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
                 </nav>
             <div class="clearfix"></div>

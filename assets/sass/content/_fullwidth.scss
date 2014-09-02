@@ -52,11 +52,12 @@ article {
 	padding: 0 10px 0 0;
 }
 
-#breadcrumbs{
+#breadcrumbs {
     list-style: none;
     margin: 10px 0;
     overflow: hidden;
     display: inline;
+    padding: 0;
 
     li {
     	float: left;

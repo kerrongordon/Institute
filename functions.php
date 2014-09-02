@@ -128,6 +128,10 @@ function tamcc_setup() {
 	}
 
 
+	add_theme_support( 'html5', array( 'search-form' ) );
+
+
+
 	/*
 	 * Enable support for Post Formats.
 	 * See http://codex.wordpress.org/Post_Formats
@@ -154,6 +158,16 @@ function tamcc_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'tamcc' ),
 		'id'            => 'sidebar-1',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Contact Sidebar', 'tamcc' ),
+		'id'            => 'sidebar-2',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

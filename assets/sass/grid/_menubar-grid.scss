@@ -39,8 +39,6 @@
         background-color: $button-background-color;
         @include transition-property(all);
         @include transition-duration(0.7s);
-        //height: 0;
-        display: none;
         
         ul {
             padding: 0;
@@ -61,7 +59,7 @@
     }
     @include breakpoint($minimum-screen) {
         @include grid-span(9, 4);  
-        margin-top: -18px;
+        margin-top: 5px;
         width: auto;
         display: block;
         background: transparent;
@@ -70,7 +68,6 @@
 
 		  li {
 			 display: inline-block;
-			 margin: 15px 10px;
 			 list-style: none;
 			 text-align: center;
 
@@ -79,7 +76,6 @@
 				text-decoration: none;
 				font-size: $font-size;
                 padding: 10px 15px;
-                @include border-radius( 5px );
                 
                  &:hover {
                      background-color: $copyright-background-color;
@@ -90,25 +86,47 @@
     }
 }
 
+.main-navigation {
+    @include breakpoint($mobile-screen) {
+        @include grid-span(12);
+        display: block;
+        clear: left;
 
-.showmenu {
-    //height: 25em;
-    display: block;
-    
-    @include breakpoint($minimum-screen) {
-        height: 0;
+        @include breakpoint($minimum-screen) {
+            @include grid-span(9, 4);
+            clear: none;
+        }
     }
+
+    .menu-toggle{
+        @include breakpoint($mobile-screen) {
+            margin: -55px 40px;
+            float: right;
+            border: none;
+            background: transparent;
+            color: $font-color-w;
+        }  
+    }
+
+    ul {
+        @include breakpoint($minimum-screen) {
+            float: right;
+        }
+    }
+
+    li {
+        @include breakpoint($mobile-screen) {
+            @include grid-span(12);
+            float: none;
+            text-align: center;
+
+            @include breakpoint($minimum-screen) {
+                float: none;
+                width: auto;
+            }
+        }   
+    } 
 }
 
-.mobile-menu-button {
-    @include grid-span(1, 12);
-    text-align: center;
-    cursor: pointer;
-    
-    i {
-        padding: 6px 0;
-    }
-    @include breakpoint($minimum-screen) {
-        display: none;
-    }
-}
+
+
