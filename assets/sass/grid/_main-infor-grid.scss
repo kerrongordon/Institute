@@ -1,0 +1,98 @@
+.main {
+    .infor-1 {
+        @include grid-span(4, 1);
+        @include breakpoint($mobile-screen) {
+           @include grid-span(12);
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 1);
+            padding: 20px 0; 
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(4, 1); 
+            padding: 40px 0;
+        }
+    }
+    .infor-2 {
+        @include grid-span(4, 5);
+        @include breakpoint($mobile-screen) {
+            @include grid-span(12); 
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 7);
+            padding: 20px 0; 
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(4, 5); 
+            padding: 40px 0;
+        }
+    }
+    .infor-3 {
+        @include grid-span(4, 9);
+        @include breakpoint($mobile-screen) {
+           @include grid-span(12); 
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 1);
+            padding: 20px 0; 
+            clear: both;
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(4, 9);  
+            clear: none;
+            padding: 40px 0;
+        }
+    }
+
+    .infor-4 {
+        @include grid-span(4, 1);
+        @include breakpoint($mobile-screen) {
+           @include grid-span(12); 
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 7);
+            padding: 20px 0; 
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(4, 1); 
+            clear: both;
+            padding: 40px 0;
+        }
+    }
+    .infor-5 {
+        @include grid-span(4, 5);
+        @include breakpoint($mobile-screen) {
+            @include grid-span(12); 
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 1);
+            padding: 20px 0; 
+            clear: both;
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(4, 5);  
+            clear: none;
+            padding: 40px 0;
+        }
+    }
+    .infor-6 {
+        @include grid-span(4, 9);
+        @include breakpoint($mobile-screen) {
+           @include grid-span(12); 
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 7);
+            padding: 20px 0; 
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(4, 9);
+            padding: 40px 0;
+        }
+    }
+}

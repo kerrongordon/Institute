@@ -1,0 +1,114 @@
+.logo {
+    @include breakpoint($mobile-screen) {
+       @include grid-span(11, 1); 
+    }
+    @include breakpoint($minimum-screen) {
+        @include grid-span(3, 1);  
+    }
+}
+
+.logo-bar {
+    width: 90%;
+    margin: 0 auto;
+    
+    @include breakpoint($minimum-screen) {
+        @include grid-span(3, 1); 
+    }
+}
+
+.menu-bar {
+    padding: 0;
+    
+    .container {
+        width: 100%;
+        
+        @include breakpoint($minimum-screen) {
+            width: 90%; 
+        }
+    }
+    @include breakpoint($minimum-screen) {
+        padding: 20px 0;  
+    }
+}
+
+
+
+.main-menu {
+    @include breakpoint($mobile-screen) {
+        @include grid-span(12);
+        background-color: $button-background-color;
+        @include transition-property(all);
+        @include transition-duration(0.7s);
+        //height: 0;
+        display: none;
+        
+        ul {
+            padding: 0;
+            li {
+                display: block;
+                
+                a {
+                    display: block;
+                    padding: 10px 0;
+                    color: $font-color-w;
+                    
+                    &:hover {
+                        background-color: $copyright-background-color;
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint($minimum-screen) {
+        @include grid-span(9, 4);  
+        margin-top: -18px;
+        width: auto;
+        display: block;
+        background: transparent;
+
+        ul {
+
+		  li {
+			 display: inline-block;
+			 margin: 15px 10px;
+			 list-style: none;
+			 text-align: center;
+
+			 a {
+				color: $font-color-w;
+				text-decoration: none;
+				font-size: $font-size;
+                padding: 10px 15px;
+                @include border-radius( 5px );
+                
+                 &:hover {
+                     background-color: $copyright-background-color;
+                }
+			 }
+		  }
+	   }
+    }
+}
+
+
+.showmenu {
+    //height: 25em;
+    display: block;
+    
+    @include breakpoint($minimum-screen) {
+        height: 0;
+    }
+}
+
+.mobile-menu-button {
+    @include grid-span(1, 12);
+    text-align: center;
+    cursor: pointer;
+    
+    i {
+        padding: 6px 0;
+    }
+    @include breakpoint($minimum-screen) {
+        display: none;
+    }
+}

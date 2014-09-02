@@ -1,0 +1,21 @@
+
+@include font-face( "source_sans_pro", font-flies("SourceSansPro/sourcesanspro-boldit-webfont.woff", 
+	"SourceSansPro/sourcesanspro-bold-webfont.woff", "SourceSansPro/sourcesanspro-extralight-webfont.woff", 
+	"SourceSansPro/sourcesanspro-extralightit-webfont.woff", "SourceSansPro/sourcesanspro-blackit-webfont.woff", 
+	"SourceSansPro/sourcesanspro-light-webfont.woff", "SourceSansPro/sourcesanspro-lightit-webfont.woff", 
+	"SourceSansPro/sourcesanspro-it-webfont.woff", "SourceSansPro/sourcesanspro-black-webfont.woff", 
+	"SourceSansPro/sourcesanspro-semiboldit-webfont.woff", "SourceSansPro/sourcesanspro-regular-webfont.woff", 
+	"SourceSansPro/sourcesanspro-semibold-webfont.woff") );
+
+$font: 'source_sans_pro', sans-serif;
+
+
+
+$font-size: 14px;
+$line-height: 1.8em;
+
+h1, h2, h3, h4, h5, h6, a, p {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}

@@ -1,0 +1,20 @@
+.full-width-content {
+	article {
+		@include breakpoint( $mobile-screen ) {
+			@include grid-span(12, 1);
+			float: none;
+		}
+		@include breakpoint( $small-screen ) {
+	        @include grid-span(10, 2);  
+	        float: none;
+	    }
+	    @include breakpoint( $minimum-screen ) {
+	        @include grid-span(8, 3);  
+	        float: none;
+	    }
+	    @include breakpoint( $large-screen ) {
+	        @include grid-span(10, 2);  
+	        float: none;
+	    }
+	}
+}

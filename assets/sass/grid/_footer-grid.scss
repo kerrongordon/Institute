@@ -1,0 +1,65 @@
+.footer {
+    
+    
+    .fw-1 {
+        @include breakpoint($mobile-screen) {
+            @include grid-span(12);
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 1);
+            padding: 20px 0; 
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(3, 1);
+            padding: 40px 0; 
+        }
+    }
+    
+    .fw-2 {
+        @include breakpoint($mobile-screen) {
+            @include grid-span(12);
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 7);
+            padding: 20px 0; 
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(3, 4);
+            padding: 40px 0; 
+        }
+    }
+    
+    .fw-3 {
+        @include breakpoint($mobile-screen) {
+            @include grid-span(12);
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 1);
+            padding: 20px 0; 
+            clear: both;
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(3, 7);
+            padding: 40px 0; 
+        }
+    }
+    
+    .fw-4 {
+        @include breakpoint($mobile-screen) {
+            @include grid-span(12);
+            padding: 5px 0;
+        }
+        @include breakpoint($small-screen) {
+            @include grid-span(6, 7);
+            padding: 20px 0; 
+        }
+        @include breakpoint($minimum-screen) {
+            @include grid-span(3, 10);
+            padding: 40px 0; 
+        }
+    }
+    
+}

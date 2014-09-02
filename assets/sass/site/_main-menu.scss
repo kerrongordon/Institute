@@ -1,0 +1,19 @@
+.main-menu {
+	width: auto;
+
+	ul {
+
+		li {
+			display: inline-block;
+			margin: 15px;
+			list-style: none;
+			text-align: center;
+
+			a {
+				color: $font-color;
+				text-decoration: none;
+				font-size: $font-size;
+			}
+		}
+	}
+}

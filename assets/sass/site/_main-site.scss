@@ -1,0 +1,200 @@
+body {
+	background-color: $background-color;
+    font-family: $font;
+    font-size: $font-size;
+    color: $font-color;
+    line-height: $line-height;
+    font-weight: 400;
+    font-style: normal;
+}
+section {
+	padding: 20px 0;
+    //@include transition-property(all);
+    //@include transition-duration(0.7s);
+}
+
+a {
+    text-decoration: none;
+    color: $spacer-background-color;
+}
+
+.menu-bar-close-icon {
+    display: none;
+}
+
+.logo {
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.spacer {
+	background: $spacer-background-color;
+    width: 100%;
+
+    .page-title {
+        background: $spacer-background-color;
+        color: $font-color-w;
+    }
+    
+    h2 {
+        color: $font-color-w;
+    }
+}
+
+.page-title {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.21);
+    padding: 20px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.menu-bar {
+    overflow: hidden;
+    background-color: $footer-background-color;
+    color: $font-color-w;
+}
+.active {
+    background-color: $copyright-background-color;
+}
+
+.infor-1, .infor-2, .infor-3, .infor-4, .infor-5, .infor-6 {
+    text-align: center;
+    padding: 40px 0;
+    @include transition-property(width);
+    @include transition-duration(0.7s);
+    
+    .fa {
+        color: #1abc9c;
+    }
+}
+
+.spacer {
+    
+    .link {
+        text-align: center;
+        background-color: $button-background-color;
+        padding: 17px 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        @include transition-property(all);
+        @include transition-duration(0.3s);
+        
+        &:hover {
+            background-color: $copyright-background-color;
+        }
+    }
+}
+
+
+
+
+.hfeed {
+    //background-color: $background-color-l-w;
+}
+
+// ---------------------------------------------------- //
+//                        footer                        //
+// ---------------------------------------------------- //
+
+
+.footer {
+    background-color: $footer-background-color;
+    
+    .widget {
+        padding: 40px 0;
+        
+        ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+
+                a {
+                    background-color: $copyright-background-color;
+                    padding: 8px 15px;
+                    margin: 5px 3.6px;
+                    font-size: 12px;
+                    color: $footer-text-color;
+                    display: inline-block;
+                    text-decoration: none;
+                    @include transition-property(background);
+                    @include transition-duration(0.5s);
+                
+                    &:hover {
+                        background-color: $spacer-background-color;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            color: $font-color-w;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: $footer-text-color;   
+
+            a {
+                color: #999;
+                text-decoration: none;
+
+                &:hover {
+                    color: $font-color-w;
+                }
+            } 
+
+        }
+
+        .tagcloud {
+
+            a {
+                background-color: $copyright-background-color;
+                padding: 8px 15px;
+                margin: 5px 3.6px;
+                font-size: 12px;
+                color: $footer-text-color;
+                display: inline-block;
+                text-decoration: none;
+                @include transition-property(background);
+                @include transition-duration(0.5s);
+                
+                &:hover {
+                    background-color: $spacer-background-color;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: $copyright-background-color;
+    
+    p {
+        color: #999;
+    }
+
+    a {
+        text-decoration: none;
+        color: #999;
+
+        &:hover {
+            color: $font-color-w;
+        }
+    }
+}
+
+.recentcomments a {
+    padding: 8px 15px;
+    margin: 5px 3.6px;
+    display: inline-block;
+}
