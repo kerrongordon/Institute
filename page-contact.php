@@ -28,8 +28,8 @@ get_header(); ?>
 
 	    <section class="spacer">
             <div class="container">
-                <h2 class="title">What's Happening at TAMCC?</h2>	
-                <a class="link" rel="external" href="news"><i class="fa fa-cubes"></i> Read Now</a>
+                <h2 class="buy-title">We are ready for you ? Feel free to buy this theme now...</h2>	
+                <a class="buy-link" rel="external" href="#"><i class="fa fa-shopping-cart"></i> BUY IT NOW</a>
                 <div class="clearfix"></div>
             </div><!-- end of container -->	
 	    </section>
