@@ -15,3 +15,5 @@ Custom Post Widget
 Revolution Slider
 
 Rotating Tweets (Twitter widget & shortcode)
+
+Page Builder by SiteOrigin
