@@ -1,7 +1,7 @@
-tamcc
+institute 
 =====
 
-wordpress theme for tamcc website 
+wordpress theme 
 
 
 Plugins use for the theme
