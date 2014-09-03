@@ -12,7 +12,7 @@ get_header(); ?>
                 	<?php echo do_shortcode( '[contact-form-7 id="1234" title="Contact form 1"]' ); ?>
 				</div>
 				<div class="widget-area">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('fw-4') ) : ?><?php endif; ?> 
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-2') ) : ?><?php endif; ?> 
                 </div>
                 <div class="clearfix"></div>
             </div><!-- end of container -->	

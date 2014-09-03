@@ -28,7 +28,7 @@
 
 	<section class="copyright">
 		<div class="container">
-	        <p>Copyright &copy; <?php echo date(" Y "); ?> | T.A. Marryshow Community College <br>
+	        <p>Copyright &copy; <?php echo date(" Y "); ?> | Institute  
 	         <?php printf( __( 'Design: %1$s by %2$s.', 'tamcc' ), '', '<a href="https://plus.google.com/u/0/+kerrongordon/posts" rel="designer" target="_blank">Kerron Gordon</a>' ); ?></p>
 	    </div><!-- end of container -->	
 	</section>
