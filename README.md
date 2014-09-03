@@ -1,7 +1,7 @@
-tamcc
+institute 
 =====
 
-wordpress theme for tamcc website 
+wordpress theme 
 
 
 Plugins use for the theme
@@ -15,3 +15,5 @@ Custom Post Widget
 Revolution Slider
 
 Rotating Tweets (Twitter widget & shortcode)
+
+Page Builder by SiteOrigin
