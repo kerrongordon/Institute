@@ -1,7 +1,7 @@
-institute 
+institute wordpress theme 
 =====
 
-wordpress theme 
+work in progress
 
 
 ##Plugins use for the theme
