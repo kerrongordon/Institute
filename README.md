@@ -4,18 +4,16 @@ institute
 wordpress theme 
 
 
-Plugins use for the theme
+##Plugins use for the theme
 
-Contact Data
+- [Contact Data](https://wordpress.org/plugins/company-general-contact-data/)
 
-Contact Form 7
+- [Contact Form 7](http://wordpress.org/plugins/contact-form-7/)
 
-Custom Post Widget
+- [Custom Post Widget](https://wordpress.org/plugins/custom-post-widget/)
 
-Revolution Slider
+- [Rotating Tweets (Twitter widget & shortcode)](https://wordpress.org/plugins/rotatingtweets/)
 
-Rotating Tweets (Twitter widget & shortcode)
-
-Page Builder by SiteOrigin
+- [Page Builder by SiteOrigin](http://wordpress.org/plugins/siteorigin-panels/)
 
 ![The Design](screenshot.png)
