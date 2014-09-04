@@ -102,4 +102,5 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 <?php get_sidebar(); ?>
+<?php include ('sidebar-l.php'); ?>
 <?php get_footer(); ?>

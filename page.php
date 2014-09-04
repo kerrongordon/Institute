@@ -32,4 +32,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+<?php include ('sidebar-l.php'); ?>
 <?php get_footer(); ?>

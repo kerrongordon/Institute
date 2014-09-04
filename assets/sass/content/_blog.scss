@@ -1,5 +1,8 @@
 .post {
     margin: 50px auto;
+    background-color: $background-color-w;
+	border: solid 1px rgba(0, 0, 0, 0.2);
+	//@include box-shadow( $box-shadow );
 
     .entry-title {
         padding: 20px;
@@ -18,14 +21,18 @@
     .wp-post-image {
     	height:auto;
         width: 100%;
-        padding: 0px 20px 0;
+        //padding: 0px 20px 0;
     }
 }
 
 .widget-area {
-	border-left: solid 1px rgba(0, 0, 0, 0.2);
-	padding: 20px;
-	margin: 50px 0;
+	margin: 50px auto;
+
+	aside {
+		padding: 20px;
+		margin: 20px 0;
+		@include box-shadow( $box-shadow-r );
+	}
 
 	.widget-title {
 		background-color: $copyright-background-color;
@@ -54,8 +61,82 @@
 	}
 }
 
+
+.sidebar-l {
+	aside {
+		@include box-shadow( $box-shadow-l );
+	}
+}
+
 .entry-meta {
 	background: $footer-background-color;
 	color: $font-color-w;
 	padding: 10px;
+
+	.posted-on {
+		padding: 5px;
+
+		a {
+			color: $font-color-w;
+			text-shadow: 1px 1px 5px #000;
+		}
+	}
+
+	.byline {
+		padding: 5px;
+
+		a {
+			color: $font-color-w;
+			text-shadow: 1px 1px 5px #000;
+		}
+	}
+
+	.comments-link {
+		padding: 5px;
+
+		a {
+			color: $font-color-w;
+			text-shadow: 1px 1px 5px #000;
+		}
+	}
+
+	.edit-link {
+		padding: 5px;
+
+		a {
+			color: $font-color-w;
+			text-shadow: 1px 1px 5px #000;
+		}
+	}
+
 }
+
+.line {
+	margin: 20px 0;
+	width: 100%;
+	border-top: solid 1px rgba(255, 255, 255, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+	@include border-radius( 100% );
+}
+
+
+.nav-previous, .nav-next {
+	padding: 15px 0;
+
+	a {
+		background-color: $footer-background-color;
+		border: solid 1px rgba(0, 0, 0, 0.42);
+		padding: 15px 40px;
+		color: $font-color-w;
+		@include transition-property(all);
+    	@include transition-duration(0.7s);
+
+		&:hover {
+			background-color: $spacer-background-color;
+		}
+
+	}
+
+}
+
+		

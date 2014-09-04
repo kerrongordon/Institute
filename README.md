@@ -17,3 +17,5 @@ Revolution Slider
 Rotating Tweets (Twitter widget & shortcode)
 
 Page Builder by SiteOrigin
+
+![The Design](screenshot.png)

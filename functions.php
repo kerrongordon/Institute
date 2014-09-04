@@ -166,7 +166,7 @@ function tamcc_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'Contact Sidebar', 'tamcc' ),
+		'name'          => __( 'left Sidebar', 'tamcc' ),
 		'id'            => 'sidebar-2',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',

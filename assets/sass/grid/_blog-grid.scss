@@ -6,19 +6,43 @@
         @include grid-span(8, 1);
     }
     @include breakpoint($minimum-screen) {
-        @include grid-span(9, 1); 
+        @include grid-span(6, 4); 
     }
 }
 
 
-.widget-area {
+.sidebar-l {
 	@include breakpoint($mobile-screen) {
+        display: none;
+    }
+    @include breakpoint($small-screen) {
+        //@include grid-span(4, 1);
+        display: none;
+    }
+    @include breakpoint($minimum-screen) {
+        @include grid-span(3, 1); 
+        display: block;
+    }
+}
+
+
+.sidebar-r {
+    @include breakpoint($mobile-screen) {
         @include grid-span(12);
+
+        aside {
+            @include box-shadow( none );
+        }
     }
     @include breakpoint($small-screen) {
         @include grid-span(4, 9);
+
+        aside {
+            @include box-shadow( $box-shadow-r );
+        }
     }
     @include breakpoint($minimum-screen) {
         @include grid-span(3, 10); 
     }
 }
+

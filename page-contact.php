@@ -12,7 +12,7 @@ get_header(); ?>
                 	<?php echo do_shortcode( '[contact-form-7 id="1234" title="Contact form 1"]' ); ?>
 				</div>
 				<div class="widget-area">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-2') ) : ?><?php endif; ?> 
+                
                 </div>
                 <div class="clearfix"></div>
             </div><!-- end of container -->	
@@ -28,8 +28,8 @@ get_header(); ?>
 
 	    <section class="spacer">
             <div class="container">
-                <h2 class="buy-title">We are ready for you ? Feel free to buy this theme now...</h2>	
-                <a class="buy-link" rel="external" href="#"><i class="fa fa-shopping-cart"></i> BUY IT NOW</a>
+                <h2 class="title">We are ready for you ? Feel free to buy this theme now...</h2>	
+                <a class="link" rel="external" href="#"><i class="fa fa-shopping-cart"></i> BUY IT NOW</a>
                 <div class="clearfix"></div>
             </div><!-- end of container -->	
 	    </section>
