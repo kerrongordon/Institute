@@ -3,45 +3,40 @@
  *Template Name: Home page
  * @package tamcc
  */
-
 get_header(); ?>
-	</div><!-- #content -->
-
-	<?php putRevSlider( "tamcc" ) ?>
-
-	    <section class="main">
-            <div class="container">
-
-			<h1 style="text-align: center; text-transform: uppercase; padding: 50px 0 0 0; font-family: initial;">institute</h1>
-            <p style="text-align: center; padding: 10px 0;">Lorem ipsum dolor sit amet, consecteteur adipiscing elit nam </p>
-            <div class="line"></div>
-               
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('infor-1') ) : ?>
-		    <?php endif; ?>
-		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('infor-2') ) : ?>
-		    <?php endif; ?>
-		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('infor-3') ) : ?>
-		    <?php endif; ?>
-		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('infor-4') ) : ?>
-		    <?php endif; ?>
-		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('infor-5') ) : ?>
-		    <?php endif; ?>
-		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('infor-6') ) : ?>
-		    <?php endif; ?>
-		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('infor-7') ) : ?>
-		    <?php endif; ?>
-                
-                <div class="clearfix"></div>
-            </div><!-- end of container -->	
-	   </section>
 
 
-	    <section class="spacer">
-            <div class="container">
-                <h2 class="title">We are ready for you ? Feel free to buy this theme now...</h2>	
-                <a class="link" rel="external" href="#"><i class="fa fa-shopping-cart"></i> BUY IT NOW</a>
-                <div class="clearfix"></div>
-            </div><!-- end of container -->	
-	    </section>
-	<div><!-- #content -->
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<div class="entry-header">
+						
+					</div><!-- .entry-header -->
+
+					<div class="entry-content">
+						<?php the_content(); ?>
+						<?php
+							wp_link_pages( array(
+								'before' => '<div class="page-links">' . __( 'Pages:', 'tamcc' ),
+								'after'  => '</div>',
+							) );
+						?>
+					</div><!-- .entry-content -->
+					<footer class="entry-footer">
+						<?php edit_post_link( __( 'Edit', 'tamcc' ), '<span class="edit-link">', '</span>' ); ?>
+					</footer><!-- .entry-footer -->
+				</article><!-- #post-## -->
+
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template
+					if ( comments_open() || '0' != get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
+
+			<?php endwhile; // end of the loop. ?>
+
+	
+
+
 <?php get_footer(); ?>

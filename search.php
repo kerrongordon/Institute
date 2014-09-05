@@ -41,6 +41,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
-<?php include ('sidebar-l.php'); ?>
+<?php get_sidebar( 'right' ); ?>
+<?php get_sidebar( 'left' ); ?>
 <?php get_footer(); ?>

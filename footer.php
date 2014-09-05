@@ -28,7 +28,7 @@
 
 	<section class="copyright">
 		<div class="container">
-	        <p>Copyright &copy; <?php echo date(" Y "); ?> | Institute  
+	        <p>Copyright &copy; <?php get_option( 'date_format' ); ?> | Institute  
 	         <?php printf( __( 'Design: %1$s by %2$s.', 'tamcc' ), '', '<a href="https://plus.google.com/u/0/+kerrongordon/posts" rel="designer" target="_blank">Kerron Gordon</a>' ); ?></p>
 	    </div><!-- end of container -->	
 	</section>
@@ -39,8 +39,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="https://maps.googleapis.com/maps/api/js?sensor=SET_TO_TRUE_OR_FALSE"></script>
         <script type="text/javascript">
-			var templateUrlPng = '<?= get_bloginfo("template_url"); ?>/assets/img/cd-icon-location.png';
-			var templateUrlSvg = '<?= get_bloginfo("template_url"); ?>/assets/img/cd-icon-location.svg';
+			var templateUrlPng = '<?= get_template_directory_uri("template_url"); ?>/assets/img/cd-icon-location.png';
+			var templateUrlSvg = '<?= get_template_directory_uri("template_url"); ?>/assets/img/cd-icon-location.svg';
 		</script>
 
 <?php wp_footer(); ?>

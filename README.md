@@ -14,6 +14,6 @@ work in progress
 
 - [Rotating Tweets (Twitter widget & shortcode)](https://wordpress.org/plugins/rotatingtweets/)
 
-- [Page Builder by SiteOrigin](http://wordpress.org/plugins/siteorigin-panels/)
+- [PixGridder](https://wordpress.org/plugins/pixgridder/)
 
 ![The Design](screenshot.png)

@@ -42,6 +42,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
-<?php include ('sidebar-l.php'); ?> 
+<div class="sidebar-r">
+<?php get_sidebar( 'right' ); ?>
+</div>
+<div class="sidebar-l">
+<?php get_sidebar( 'left' ); ?>
+</div>
 <?php get_footer(); ?>

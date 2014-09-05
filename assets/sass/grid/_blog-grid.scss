@@ -10,6 +10,30 @@
     }
 }
 
+.content-area-single {
+    @include breakpoint($mobile-screen) {
+        @include grid-span(12);
+    }
+    @include breakpoint($small-screen) {
+        @include grid-span(8, 1);
+    }
+    @include breakpoint($minimum-screen) {
+        @include grid-span(9, 1); 
+    }
+}
+
+.content-area-page {
+    @include breakpoint($mobile-screen) {
+        @include grid-span(12);
+    }
+    @include breakpoint($small-screen) {
+        @include grid-span(8, 1);
+    }
+    @include breakpoint($minimum-screen) {
+        @include grid-span(9, 1); 
+    }
+}
+
 
 .sidebar-l {
 	@include breakpoint($mobile-screen) {
@@ -31,14 +55,14 @@
         @include grid-span(12);
 
         aside {
-            @include box-shadow( none );
+            //@include box-shadow( none );
         }
     }
     @include breakpoint($small-screen) {
         @include grid-span(4, 9);
 
         aside {
-            @include box-shadow( $box-shadow-r );
+            //@include box-shadow( $box-shadow-r );
         }
     }
     @include breakpoint($minimum-screen) {

@@ -131,6 +131,15 @@ function tamcc_setup() {
 	add_theme_support( 'html5', array( 'search-form' ) );
 
 
+	//add link to the post thumbnail
+	add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
+
+	function my_post_image_html( $html, $post_id, $post_image_id ) {
+	$html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
+	return $html;
+	}
+
+
 
 	/*
 	 * Enable support for Post Formats.
@@ -156,7 +165,7 @@ add_action( 'after_setup_theme', 'tamcc_setup' );
  */
 function tamcc_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'tamcc' ),
+		'name'          => __( 'Right Sidebar', 'tamcc' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -166,7 +175,7 @@ function tamcc_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'left Sidebar', 'tamcc' ),
+		'name'          => __( 'Left Sidebar', 'tamcc' ),
 		'id'            => 'sidebar-2',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -327,3 +336,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+
+
