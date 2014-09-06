@@ -6,7 +6,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<div class="featured-img">
 		<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'wpbs-featured-home' ); } ?>
 		</div>
@@ -20,8 +19,9 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</div><!-- .entry-header -->
-
+		
 	<div class="entry-content">
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<?php the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'tamcc' ) ); ?>
 		<?php
 			wp_link_pages( array(
