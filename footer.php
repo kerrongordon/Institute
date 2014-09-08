@@ -35,14 +35,6 @@
 
 </div><!-- #page -->
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=SET_TO_TRUE_OR_FALSE"></script>
-        <script type="text/javascript">
-			var templateUrlPng = '<?= get_template_directory_uri("template_url"); ?>/assets/img/cd-icon-location.png';
-			var templateUrlSvg = '<?= get_template_directory_uri("template_url"); ?>/assets/img/cd-icon-location.svg';
-		</script>
-
 <?php wp_footer(); ?>
 
 </body>
