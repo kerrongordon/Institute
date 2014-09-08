@@ -4,8 +4,18 @@
  * @package tamcc
  */
 get_header(); ?>
-
-
+</div><!-- #content -->
+	
+	<div>
+		<?php if ( get_header_image() ) : ?>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<img src="<?php header_image(); ?>" width="100%; ?>" height="auto" alt="">
+		</a>
+		<?php endif; // End header image check. ?>		
+	</div>
+		
+		<section class="main">
+			<div class="container">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -27,16 +37,9 @@ get_header(); ?>
 					</footer><!-- .entry-footer -->
 				</article><!-- #post-## -->
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
 			<?php endwhile; // end of the loop. ?>
-
-	
-
-
+			<div class="clearfix"></div>
+			</div><!-- #content -->
+		</section>
+	<div class="container">
 <?php get_footer(); ?>

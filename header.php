@@ -36,7 +36,6 @@
 
 	<section class="spacer">
         <div class="container">
-            <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
             <div><span class="yourare">You Are Here: </span><?php the_breadcrumb(); ?></div>
             <div class="clearfix"></div>
         </div><!-- end of container -->	
