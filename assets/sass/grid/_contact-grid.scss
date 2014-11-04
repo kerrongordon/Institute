@@ -1,0 +1,11 @@
+.contact-form-area {
+	@include breakpoint($mobile-screen) {
+        @include grid-span(12);
+    }
+    @include breakpoint($small-screen) {
+        @include grid-span(8, 1);
+    }
+    @include breakpoint($minimum-screen) {
+        @include grid-span(9, 1); 
+    }
+}

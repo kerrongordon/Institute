@@ -3,7 +3,7 @@
        @include grid-span(11, 1); 
     }
     @include breakpoint($minimum-screen) {
-        @include grid-span(3, 1);  
+        @include grid-span(4, 1);  
     }
 }
 
@@ -58,7 +58,7 @@
         }
     }
     @include breakpoint($minimum-screen) {
-        @include grid-span(9, 4);  
+        @include grid-span(8, 4);  
         margin-top: 5px;
         width: auto;
         display: block;

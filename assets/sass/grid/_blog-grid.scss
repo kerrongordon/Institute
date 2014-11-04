@@ -6,7 +6,7 @@
         @include grid-span(8, 1);
     }
     @include breakpoint($minimum-screen) {
-        @include grid-span(7, 3); 
+        @include grid-span(6, 4); 
     }
 }
 
@@ -44,7 +44,7 @@
         display: none;
     }
     @include breakpoint($minimum-screen) {
-        @include grid-span(2, 1); 
+        @include grid-span(3, 1); 
         display: block;
     }
 }

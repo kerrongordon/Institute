@@ -11,6 +11,7 @@ get_header(); ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			<img src="<?php header_image(); ?>" width="100%; ?>" height="auto" alt="">
 		</a>
+		<?php echo get_bloginfo ( 'description' );  ?>
 		<?php endif; // End header image check. ?>		
 	</div>
 		
