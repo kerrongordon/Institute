@@ -1,0 +1,30 @@
+.hero, .hero-title {
+	@include transition ( all 0.7s linear );
+	@include breakpoint($mobile-screen) {
+	    height: 250px;
+	}
+	@include breakpoint($small-screen) {
+	    height: 350px;
+	}
+	@include breakpoint($minimum-screen) {
+	    height: 500px;
+	}
+}
+
+
+.hero-title {
+
+	h1 {
+		@include transition ( all 0.7s linear );
+		@include breakpoint($mobile-screen) {
+	        font-size: 1.5rem;
+	    }
+	    @include breakpoint($small-screen) {
+	        font-size: 3rem;
+	    }
+	    @include breakpoint($minimum-screen) {
+	        font-size: 4rem;
+	    }
+	}
+
+}

@@ -1,0 +1,19 @@
+.about-section {
+	ul {padding: 0;}
+	
+	li {
+		padding: 15px 0;
+		list-style: none;
+
+		&:before {
+			counter-increment: section;     
+  			content: "" counter(section) " ";
+  			float: left;
+  			padding: 15px 25px;
+  			margin: 0px 20px 0 0;
+  			color: $font-color-w;
+  			background: $spacer-background-color; 
+  			opacity: 0.8;
+		}
+	}
+}

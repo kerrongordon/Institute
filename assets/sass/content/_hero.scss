@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400);
+$hero-hight: 500px;
+
+.hero {
+	width: 100%;
+	height: $hero-hight;
+	background-repeat: no-repeat;
+	@include background-size( cover );
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-title {
+	height: $hero-hight;
+	@include display-flex;
+	@include align-items(center);
+	@include justify-content(center);
+	background: rgba(0, 0, 0, 0.22);
+
+	h1 {
+		font-family: 'Cinzel Decorative', cursive;
+		font-size: 4rem;
+		padding: 0 50px;
+		font-weight: 400;
+		color: $font-color-w;
+		line-height: $line-hight;
+		text-align: center;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+	}
+}
+
+
+
