@@ -36,7 +36,7 @@
 .main-menu {
     @include breakpoint($mobile-screen) {
         @include grid-span(12);
-        background-color: $button-background-color;
+        background-color: #2ecc71;
         @include transition-property(all);
         @include transition-duration(0.7s);
         
@@ -59,7 +59,7 @@
     }
     @include breakpoint($minimum-screen) {
         @include grid-span(8, 4);  
-        margin-top: 5px;
+        //margin-top: 5px;
         width: auto;
         display: block;
         background: transparent;

@@ -190,7 +190,7 @@ function tamcc_widgets_init() {
 		'name'          => __( 'footer-bar-1', 'tamcc' ),
 		'id'            => 'fw-1',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s fw-1">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s fw-1 wow fadeInLeft">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title"><i class="fa fa-comment"></i> ',
 		'after_title'   => '</h4>',
@@ -200,7 +200,7 @@ function tamcc_widgets_init() {
 		'name'          => __( 'footer-bar-2', 'tamcc' ),
 		'id'            => 'fw-2',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s fw-2">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s fw-2 wow fadeInDown">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title"><i class="fa fa-twitter"></i> ',
 		'after_title'   => '</h4>',
@@ -210,7 +210,7 @@ function tamcc_widgets_init() {
 		'name'          => __( 'footer-bar-3', 'tamcc' ),
 		'id'            => 'fw-3',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s fw-3">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s fw-3 wow fadeInUp">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title"><i class="fa fa-tags"></i> ',
 		'after_title'   => '</h4>',
@@ -220,74 +220,12 @@ function tamcc_widgets_init() {
 		'name'          => __( 'footer-bar-4', 'tamcc' ),
 		'id'            => 'fw-4',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s fw-4">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s fw-4 wow fadeInRight">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title"><i class="fa fa-arrow-circle-o-down"></i> ',
 		'after_title'   => '</h4>',
 	) );
 
-
-	//home page infor boxes
-
-	register_sidebar( array(
-		'name'          => __( 'home-infor-1', 'tamcc' ),
-		'id'            => 'infor-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="%2$s infor-1">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<i class="fa fa-cubes fa-5x"></i><h3 class=" "> ',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'home-infor-2', 'tamcc' ),
-		'id'            => 'infor-2',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="%2$s infor-2">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<i class="fa fa-pie-chart fa-5x"></i><h3 class=" "> ',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'home-infor-3', 'tamcc' ),
-		'id'            => 'infor-3',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="%2$s infor-3">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<i class="fa fa-calculator fa-5x"></i><h3 class=" "> ',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'home-infor-4', 'tamcc' ),
-		'id'            => 'infor-4',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="%2$s infor-4">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<i class="fa fa-bar-chart fa-5x"></i><h3 class=" "> ',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'home-infor-5', 'tamcc' ),
-		'id'            => 'infor-5',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="%2$s infor-5">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<i class="fa fa-cogs fa-5x"></i><h3 class=" "> ',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'home-infor-6', 'tamcc' ),
-		'id'            => 'infor-6',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="%2$s infor-6">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<i class="fa fa-users fa-5x"></i><h3 class=" "> ',
-		'after_title'   => '</h3>',
-	) );
 }
 add_action( 'widgets_init', 'tamcc_widgets_init' );
 

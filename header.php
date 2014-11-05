@@ -16,6 +16,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/vendor/wow.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -34,11 +35,19 @@
         </div><!-- container -->
     </section><!-- menu-bar -->
 
-	<section class="spacer">
-        <div class="container">
-            <div><span class="yourare">You Are Here: </span><?php the_breadcrumb(); ?></div>
-            <div class="clearfix"></div>
-        </div><!-- end of container -->	
-	</section>
+    <?php if ( is_front_page() ) { ?>
+            
+    <?php }  else  { ?>
+
+            <section class="spacer">
+                <div class="container">
+                    <div><span class="yourare">You Are Here: </span><?php the_breadcrumb(); ?></div>
+                    <div class="clearfix"></div>
+                </div><!-- end of container --> 
+            </section>
+
+    <?php  } ?>
+
+	
 
 	<div id="content" class="site-content container">

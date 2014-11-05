@@ -6,17 +6,21 @@
 get_header(); ?>
 </div><!-- #content -->
 	
-	<div>
-		<?php if ( get_header_image() ) : ?>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-			<img src="<?php header_image(); ?>" width="100%; ?>" height="auto" alt="">
-		</a>
-		<?php echo get_bloginfo ( 'description' );  ?>
-		<?php endif; // End header image check. ?>		
-	</div>
+	
+	<?php if ( get_header_image() ) : ?>
+		<div class="hero" style="background: url(<?php header_image(); ?>);background-repeat: no-repeat;background-repeat: no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: 50% 50%;">
+			
+			<div class="hero-title">
+				<h1 class="wow zoomInUp">
+					<?php echo get_bloginfo ( 'description' );  ?>
+				</h1>
+			</div>
+		</div>
+	<?php endif; // End header image check. ?>		
+	
 		
 		<section class="main">
-			<div class="container">
+			<!--<div class="container">-->
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -40,7 +44,7 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 			<div class="clearfix"></div>
-			</div><!-- #content -->
+			<!--</div>--><!-- #content -->
 		</section>
 	<div class="container">
 <?php get_footer(); ?>
