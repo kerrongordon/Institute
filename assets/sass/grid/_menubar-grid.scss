@@ -27,7 +27,7 @@
         }
     }
     @include breakpoint($minimum-screen) {
-        padding: 20px 0;  
+        //padding: 20px 0;  
     }
 }
 
@@ -48,7 +48,7 @@
                 a {
                     display: block;
                     padding: 10px 0;
-                    color: $font-color-w;
+                    color: $font-color;
                     
                     &:hover {
                         background-color: $copyright-background-color;
@@ -72,10 +72,10 @@
 			 text-align: center;
 
 			 a {
-				color: $font-color-w;
+				color: $font-color;
 				text-decoration: none;
 				font-size: $font-size;
-                padding: 10px 15px;
+                padding: 20px 15px;
                 
                  &:hover {
                      background-color: $copyright-background-color;
@@ -130,3 +130,11 @@
 
 
 
+.current-menu-item,
+.current-page-ancestor {
+    background: $spacer-background-color;
+
+    a {
+        color: $font-color-w;
+    }
+}

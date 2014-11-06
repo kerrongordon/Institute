@@ -52,9 +52,16 @@ function tamcc_setup() {
 	add_filter('widget_text', 'do_shortcode');
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'tamcc' ),
-	) );
+	//Register Navigations
+	add_action( 'init', 'my_custom_menus' );
+	function my_custom_menus() {
+	    register_nav_menus(
+	        array(
+	            'primary-menu' => __( 'Primary Menu' ),
+	            'energy-research' => __( 'Energy Research' )
+	        )
+	    );
+	}
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -94,12 +101,12 @@ function tamcc_setup() {
         echo get_option('home');
         echo '">';
         echo 'Home';
-        echo '</a></li><li class="separator"> / </li>';
+        echo '</a></li><li class="separator"> <i class="fa fa-angle-double-right" style="color: #fff;"></i> </li>';
         if (is_category() || is_single()) {
             echo '<li>';
-            the_category(' </li><li class="separator"> / </li><li> ');
+            the_category(' </li><li class="separator"> <i class="fa fa-angle-double-right" style="color: #fff;"></i> </li><li> ');
             if (is_single()) {
-                echo '</li><li class="separator"> / </li><li>';
+                echo '</li><li class="separator"> <i class="fa fa-angle-double-right" style="color: #fff;"></i> </li><li>';
                 the_title();
                 echo '</li>';
             }
@@ -108,7 +115,7 @@ function tamcc_setup() {
                 $anc = get_post_ancestors( $post->ID );
                 $title = get_the_title();
                 foreach ( $anc as $ancestor ) {
-                    $output = '<li><a href="'.get_permalink($ancestor).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a></li> <li class="separator">/</li>';
+                    $output = '<li><a href="'.get_permalink($ancestor).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a></li> <li class="separator"><i class="fa fa-angle-double-right" style="color: #fff;"></i></li>';
                 }
                 echo $output;
                 echo '<strong title="'.$title.'"> '.$title.'</strong>';

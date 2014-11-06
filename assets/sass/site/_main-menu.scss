@@ -6,7 +6,6 @@
 	display: block;
 	float: left;
 	width: 100%;
-	margin-top: 10px;
 }
 
 .main-navigation ul {
@@ -144,3 +143,38 @@
 	}
 
 }
+
+
+
+
+//cat-menu
+.cat-menu {
+	background: $footer-background-color;
+
+	.current-menu-item {
+		background: $spacer-background-color;
+	}
+}
+
+.nav {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: #fff;
+	overflow: hidden;
+}
+
+.menu-item-object-page {
+	display: inline-block;
+
+	a {
+		color: invert;
+		display: block;
+		padding: 15px 6px;
+
+		&:hover {
+			background: $spacer-background-color;
+		}
+	}
+}
+

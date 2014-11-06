@@ -29,11 +29,47 @@
             </div>
                 <nav id="site-navigation" class="main-navigation main-menu" role="navigation">
                     <button class="menu-toggle"><?php _e( '<i class="fa fa-bars fa-3x"></i>', 'tamcc' ); ?></button>
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                    <?php wp_nav_menu (array('theme_location' => 'primary-menu','menu_class' => 'nav'));?>
                 </nav>
             <div class="clearfix"></div>
         </div><!-- container -->
     </section><!-- menu-bar -->
+
+
+    <div class="cat-menu">
+        <!--<img src="<?php bloginfo('template_url'); ?>/assets/img/drawing.svg">-->
+        <div class="container">
+            <?php if ( is_page( 
+                        array( 'biological-power', 
+                               'biomass-and-biogas', 
+                               'cogeneration-or-combined-heat-and-power', 
+                               'geothermal-energy', 
+                               'hydro-power-or-water-power', 
+                               'nuclear-power', 
+                               'a-photovoltaic-power-station', 
+                               'static-electricity', 
+                               'tidal-power', 
+                               'waste-to-energy-power', 
+                               'wind-power') ) ) { ?>
+
+                <?php wp_nav_menu (array('theme_location' => 'energy-research','menu_class' => 'nav'));?>
+
+            <?php } ?>
+        </div>
+    </div>
+
+
+              <?php if ( get_header_image() ) : ?>
+                    <div class="hero">
+                        
+                        <div class="hero-title">
+                            <h1 class="wow zoomInUp">
+                                <?php echo get_the_title(); ?>
+                            </h1>
+                        </div>
+                    </div>
+                <?php endif; // End header image check. ?>  
+
 
     <?php if ( is_front_page() ) { ?>
             
@@ -41,13 +77,13 @@
 
             <section class="spacer">
                 <div class="container">
-                    <div><span class="yourare">You Are Here: </span><?php the_breadcrumb(); ?></div>
+                    <div><span class="yourare" style="color: #fff;">You Are Here: </span><?php the_breadcrumb(); ?></div>
                     <div class="clearfix"></div>
                 </div><!-- end of container --> 
             </section>
 
     <?php  } ?>
+    
 
-	
 
 	<div id="content" class="site-content container">

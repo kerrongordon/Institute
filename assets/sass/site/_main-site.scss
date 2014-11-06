@@ -166,13 +166,13 @@ a {
 .logo {
 
     a {
-        color: #fff;
+        color: $font-color;
         text-decoration: none;
     }
 }
 
 .spacer {
-	background: $spacer-background-color;
+	background: $copyright-background-color;
     width: 100%;
 
     .page-title {
@@ -195,8 +195,11 @@ a {
 }
 
 .menu-bar {
-    background-color: $footer-background-color;
-    color: $font-color-w;
+    background-color: #fff;
+    color: #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    position: relative;
 }
 .active {
     background-color: $copyright-background-color;
@@ -433,4 +436,44 @@ div.wpcf7 {
 
 .main {
     overflow: hidden;
+}
+
+
+.pro-box {
+  padding: 0;
+  margin: 60px 0;
+  text-align: center;
+  @include display-flex;
+  @include flex-wrap(wrap);
+  @include transition ( all .7s linear );
+ 
+  li {
+    border-radius: 2px;
+    min-width: 20em;
+    margin: .5em;
+    padding: .5em;
+    display: inline-block; /* non-flexbox browsers */
+    @include flex(1 0);
+    @include transition ( all .7s linear );
+  }
+}
+
+.proImage {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.yourare, 
+#breadcrumbs,
+.separator, 
+#breadcrumbs strong {
+    color: $font-color-w;
 }
