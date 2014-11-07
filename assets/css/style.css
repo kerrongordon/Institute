@@ -3259,7 +3259,6 @@ a {
 .menu-bar {
   background-color: #fff;
   color: #555;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 999;
   position: relative;
 }
@@ -3583,6 +3582,7 @@ div.wpcf7 {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
+    color: #555555;
   }
 
   .main-navigation ul {
@@ -3633,10 +3633,13 @@ div.wpcf7 {
 }
 
 .cat-menu {
-  background: #259b24;
+  background: #fff;
 }
 .cat-menu .current-menu-item {
-  background: #259b24;
+  background: #2F2F2F;
+}
+.cat-menu .current-menu-item a {
+  color: #ffffff;
 }
 
 .nav {
@@ -3651,12 +3654,17 @@ div.wpcf7 {
   display: inline-block;
 }
 .menu-item-object-page a {
-  color: invert;
+  color: #555555;
   display: block;
   padding: 15px 6px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .menu-item-object-page a:hover {
-  background: #259b24;
+  background: #2F2F2F;
+  color: #ffffff;
 }
 
 .slider {
@@ -3787,40 +3795,6 @@ article pre {
   color: #2F2F2F;
 }
 
-.post {
-  margin: 50px auto;
-}
-.post .entry-title {
-  padding: 20px 20px 20px 75px;
-  margin: 0;
-}
-.post .entry-content {
-  display: block;
-  padding: 20px 20px 20px 60px;
-  background-color: #fff;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.post .entry-footer {
-  padding: 10px;
-  border-bottom: solid 1px rgba(0, 0, 0, 0.11);
-}
-.post .wp-post-image {
-  height: auto;
-  width: 100%;
-}
-
-.widget-area {
-  margin: 50px auto;
-}
-.widget-area aside {
-  padding: 0 20px 20px;
-}
-.widget-area ul {
-  padding: 0;
-  list-style: none;
-}
 .widget-area ul li a {
   padding: 5px;
   display: block;
@@ -3838,62 +3812,32 @@ article pre {
   color: #ffffff;
 }
 
-.entry-meta {
-  background: #259b24;
-  color: #ffffff;
-  padding: 10px;
-  position: relative;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
 .entry-meta .posted-on {
-  padding: 25px 5px;
-  position: absolute;
-  left: -40px;
-  top: -25px;
-  width: 100px;
-  height: 100px;
-  background-color: #259b24;
-  text-align: center;
-  border-radius: 50%;
   display: block;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .entry-meta .posted-on a {
-  color: #ffffff;
-  text-shadow: 1px 1px 5px #000;
+  color: #555555;
 }
 .entry-meta .posted-on i {
-  color: #ffffff;
-  text-shadow: 1px 1px 5px #000;
-}
-.entry-meta .byline {
-  padding: 5px 5px 5px 65px;
+  color: #555555;
 }
 .entry-meta .byline a {
-  color: #ffffff;
-  text-shadow: 1px 1px 5px #000;
+  color: #555555;
 }
 .entry-meta .byline i {
-  color: #ffffff;
-  text-shadow: 1px 1px 5px #000;
+  color: #555555;
 }
 .entry-meta .comments-link {
   padding: 5px;
 }
 .entry-meta .comments-link a {
-  color: #ffffff;
-  text-shadow: 1px 1px 5px #000;
+  color: #555555;
 }
 .entry-meta .edit-link {
   padding: 5px;
 }
 .entry-meta .edit-link a {
-  color: #ffffff;
-  text-shadow: 1px 1px 5px #000;
+  color: #555555;
 }
 
 .line {
@@ -3929,27 +3873,17 @@ article pre {
 
 .featured-img {
   overflow: hidden;
-  width: 100%;
-  height: auto;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  max-width: 42em;
+  height: 200px;
+  margin: 0 auto 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 .featured-img .wp-post-image {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.featured-img .wp-post-image:hover {
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  -webkit-transform: scale(2);
-  transform: scale(2);
+  width: 200px;
+  height: 200px;
 }
 
 #wp-calendar {
@@ -3959,6 +3893,34 @@ article pre {
 
 .site-main .page {
   margin: 50px auto;
+}
+
+.blogroll {
+  padding: 0;
+  margin: 60px 0;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+}
+.blogroll article {
+  border-radius: 2px;
+  min-width: 20em;
+  width: 27.9em;
+  padding: .5em;
+  display: inline-block;
+  /* non-flexbox browsers */
+  -webkit-flex: 1 0;
+  flex: 1 0;
+  -moz-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
 }
 
 .comments-area ol {
@@ -4023,6 +3985,13 @@ article pre {
   position: relative;
   overflow: hidden;
   background-color: #259b24;
+}
+.hero img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
 }
 
 .hero-title {
@@ -4126,7 +4095,7 @@ article pre {
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    background-color: #2ecc71;
+    background-color: #2b2b2b;
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
@@ -4135,6 +4104,11 @@ article pre {
     -o-transition-duration: 0.7s;
     -webkit-transition-duration: 0.7s;
     transition-duration: 0.7s;
+  }
+  .main-menu .current-menu-item a,
+  .main-menu .current-page-ancestor a {
+    background: #2F2F2F;
+    color: #ffffff;
   }
   .main-menu ul {
     padding: 0;
@@ -4206,7 +4180,7 @@ article pre {
     float: right;
     border: none;
     background: transparent;
-    color: #ffffff;
+    color: #555555;
   }
 }
 @media (min-width: 960px) {
@@ -4234,10 +4208,7 @@ article pre {
 
 .current-menu-item,
 .current-page-ancestor {
-  background: #259b24;
-}
-.current-menu-item a,
-.current-page-ancestor a {
+  background: #2F2F2F;
   color: #ffffff;
 }
 

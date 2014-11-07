@@ -81,6 +81,7 @@
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
+		color: $font-color;
 	}
 
 	.main-navigation ul {
@@ -149,10 +150,13 @@
 
 //cat-menu
 .cat-menu {
-	background: $footer-background-color;
+	background: #fff;
 
 	.current-menu-item {
-		background: $spacer-background-color;
+		background: $copyright-background-color;
+
+		a { color: $font-color-w; }
+		
 	}
 }
 
@@ -168,12 +172,14 @@
 	display: inline-block;
 
 	a {
-		color: invert;
+		color: $font-color;
 		display: block;
 		padding: 15px 6px;
+		@include transition ( all .3s ease-in-out );
 
 		&:hover {
-			background: $spacer-background-color;
+			background: $copyright-background-color;
+			color: $font-color-w;
 		}
 	}
 }

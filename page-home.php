@@ -7,7 +7,7 @@ get_header(); ?>
 </div><!-- #content -->
 	
 	
-	<?php if ( get_header_image() ) : ?>
+	<!--<?php if ( get_header_image() ) : ?>
 		<div class="hero" style="background: url(<?php header_image(); ?>);background-repeat: no-repeat;background-repeat: no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: 50% 50%;">
 			
 			<div class="hero-title">
@@ -16,7 +16,7 @@ get_header(); ?>
 				</h1>
 			</div>
 		</div>
-	<?php endif; // End header image check. ?>		
+	<?php endif; // End header image check. ?>-->		
 	
 		
 		<section class="main">

@@ -36,9 +36,15 @@
 .main-menu {
     @include breakpoint($mobile-screen) {
         @include grid-span(12);
-        background-color: #2ecc71;
+        background-color: #2b2b2b;
         @include transition-property(all);
         @include transition-duration(0.7s);
+
+        .current-menu-item a,
+        .current-page-ancestor a {
+            background: $copyright-background-color;
+            color: $font-color-w;
+        }
         
         ul {
             padding: 0;
@@ -104,7 +110,7 @@
             float: right;
             border: none;
             background: transparent;
-            color: $font-color-w;
+            color: $font-color;
         }  
     }
 
@@ -132,9 +138,6 @@
 
 .current-menu-item,
 .current-page-ancestor {
-    background: $spacer-background-color;
-
-    a {
-        color: $font-color-w;
-    }
+    background: $copyright-background-color;
+    color: $font-color-w;
 }

@@ -41,7 +41,7 @@ function tamcc_setup() {
 	/************* THUMBNAIL SIZE OPTIONS *************/
 
                    // Thumbnail sizes
-    add_image_size( 'wpbs-featured', 780, 333, true );
+    add_image_size( 'wpbs-featured', 300, 200, true );
     add_image_size( 'wpbs-featured-home', 996, 311, true);
     add_image_size( 'wpbs-featured-blog', 350, 135, true);
     add_image_size( 'wpbs-featured-carousel', 1200, 800, true);
@@ -58,7 +58,8 @@ function tamcc_setup() {
 	    register_nav_menus(
 	        array(
 	            'primary-menu' => __( 'Primary Menu' ),
-	            'energy-research' => __( 'Energy Research' )
+	            'energy-research' => __( 'Energy Research' ),
+	            'solar-solution' => __( 'Solar Solution' )
 	        )
 	    );
 	}
@@ -73,7 +74,7 @@ function tamcc_setup() {
 
 
 	function custom_excerpt_length( $length ) {
-	return 100;
+	return 20;
 	}
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
@@ -241,7 +242,7 @@ add_action( 'widgets_init', 'tamcc_widgets_init' );
  */
 function tamcc_scripts() {
 	
-	wp_enqueue_style( 'tamcc-style-main', get_template_directory_uri() . '/assets/css/style.css' );
+	wp_enqueue_style( 'tamcc-style-main', get_template_directory_uri() . '/assets/css/style.css?v='.time() );
 
 	wp_enqueue_style( 'tamcc-style', get_stylesheet_uri() );
 

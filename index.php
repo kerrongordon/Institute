@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="blogroll">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -42,10 +42,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<div class="sidebar-r">
-<?php get_sidebar( 'right' ); ?>
-</div>
-<div class="sidebar-l">
-<?php get_sidebar( 'left' ); ?>
-</div>
 <?php get_footer(); ?>

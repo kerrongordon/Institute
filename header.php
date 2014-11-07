@@ -36,39 +36,35 @@
     </section><!-- menu-bar -->
 
 
+
+              <?php if ( get_header_image() ) : ?>
+                    <div class="hero" style="background: url(<?php header_image(); ?>);background-repeat: no-repeat;background-repeat: no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: 50% 50%;">
+                        <div class="hero-title">
+                            <h1 class="wow zoomInUp">
+                               <?php if ( is_front_page() ) { echo get_bloginfo ( 'description' ); }  else  {  echo get_the_title(); } ?>  
+                            </h1>
+                        </div>
+                    </div>
+                <?php endif; // End header image check. ?>  
+
+
+
+  <?php include 'var.php'; ?>
+
     <div class="cat-menu">
-        <!--<img src="<?php bloginfo('template_url'); ?>/assets/img/drawing.svg">-->
         <div class="container">
-            <?php if ( is_page( 
-                        array( 'biological-power', 
-                               'biomass-and-biogas', 
-                               'cogeneration-or-combined-heat-and-power', 
-                               'geothermal-energy', 
-                               'hydro-power-or-water-power', 
-                               'nuclear-power', 
-                               'a-photovoltaic-power-station', 
-                               'static-electricity', 
-                               'tidal-power', 
-                               'waste-to-energy-power', 
-                               'wind-power') ) ) { ?>
-
+            <?php if ( is_page( $energyresearch ) ) { ?>
                 <?php wp_nav_menu (array('theme_location' => 'energy-research','menu_class' => 'nav'));?>
+            <?php } ?>
 
+            <?php if ( is_page( $solarsolution ) ) { ?>
+                <?php wp_nav_menu (array('theme_location' => 'solar-solution','menu_class' => 'nav'));?>
             <?php } ?>
         </div>
     </div>
 
 
-              <?php if ( get_header_image() ) : ?>
-                    <div class="hero">
-                        
-                        <div class="hero-title">
-                            <h1 class="wow zoomInUp">
-                                <?php echo get_the_title(); ?>
-                            </h1>
-                        </div>
-                    </div>
-                <?php endif; // End header image check. ?>  
+
 
 
     <?php if ( is_front_page() ) { ?>
