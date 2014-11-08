@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-header">
-		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+		<!--<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>-->
 		<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'wpbs-featured-home' ); } ?>
 		<div class="entry-meta">
 			<?php tamcc_posted_on(); ?>

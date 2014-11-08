@@ -51,8 +51,12 @@
 
 
 .sidebar-r {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
     @include breakpoint($mobile-screen) {
         @include grid-span(12);
+        display: none;
 
         aside {
             //@include box-shadow( none );
@@ -60,7 +64,8 @@
     }
     @include breakpoint($small-screen) {
         @include grid-span(4, 9);
-
+        display: block;
+        
         aside {
             //@include box-shadow( $box-shadow-r );
         }

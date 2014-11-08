@@ -52,6 +52,9 @@
 
 
 .sidebar-l {
+	margin-top: 60px;
+	margin-bottom: 60px;
+
 	aside {
 		//@include box-shadow( $box-shadow-l );
 	}
@@ -61,14 +64,14 @@
 	
 
 	.posted-on {
-		display: block;
+		
 
 		a {
-			color: $font-color;
+			color: $font-color-w;
 		}
 
 		i {
-			color: $font-color;
+			color: $font-color-w;
 		}
 	}
 
@@ -76,11 +79,11 @@
 		
 
 		a {
-			color: $font-color;
+			color: $font-color-w;
 		}
 
 		i {
-			color: $font-color;
+			color: $font-color-w;
 		}
 	}
 
@@ -88,7 +91,7 @@
 		padding: 5px;
 
 		a {
-			color: $font-color;
+			color: $font-color-w;
 		}
 	}
 
@@ -96,7 +99,7 @@
 		padding: 5px;
 
 		a {
-			color: $font-color;
+			color: $font-color-w;
 		}
 	}
 
@@ -116,19 +119,21 @@
 
 	a {
 		background-color: $footer-background-color;
-		border: solid 1px rgba(0, 0, 0, 0.42);
-		padding: 15px 40px;
+		border-bottom: solid 3px rgba(0, 0, 0, 0.42);
+		padding: 10px 25px;
 		color: $font-color-w;
 		@include transition-property(all);
     	@include transition-duration(0.7s);
 
 		&:hover {
-			background-color: $spacer-background-color;
+			background-color: $copyright-background-color;
 		}
 
 	}
 
 }
+
+
 
 .featured-img {
 	overflow: hidden;
@@ -176,4 +181,33 @@
         @include flex(1 0);
         @include transition ( all .7s linear );
     }
+
+    .edit-link {
+
+		a {
+			color: $font-color;
+		}
+	}
+
+}
+
+.content-area-single {
+	margin-top: 60px;
+	margin-bottom: 60px;
+
+	.entry-meta {
+		background: #259b24;
+		padding: 10px;
+		color: #fff;
+		margin: 20px 0
+	}
+
+	.entry-meta > span {
+		padding: 0 10px;
+	}
+
+	img {
+		width: 100%;
+	}
+
 }

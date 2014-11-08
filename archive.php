@@ -9,13 +9,13 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="blogroll">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<div class="page-header">
-				<h2 class="page-title">
+				<!--<h2 class="page-title">
 					<?php
 						if ( is_category() ) :
 							single_cat_title();
@@ -67,7 +67,7 @@ get_header(); ?>
 
 						endif;
 					?>
-				</h2>
+				</h2>-->
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
@@ -101,6 +101,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar( 'right' ); ?>
-<?php get_sidebar( 'left' ); ?>
 <?php get_footer(); ?>

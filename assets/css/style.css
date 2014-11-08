@@ -3812,32 +3812,34 @@ article pre {
   color: #ffffff;
 }
 
-.entry-meta .posted-on {
-  display: block;
+.sidebar-l {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
+
 .entry-meta .posted-on a {
-  color: #555555;
+  color: #ffffff;
 }
 .entry-meta .posted-on i {
-  color: #555555;
+  color: #ffffff;
 }
 .entry-meta .byline a {
-  color: #555555;
+  color: #ffffff;
 }
 .entry-meta .byline i {
-  color: #555555;
+  color: #ffffff;
 }
 .entry-meta .comments-link {
   padding: 5px;
 }
 .entry-meta .comments-link a {
-  color: #555555;
+  color: #ffffff;
 }
 .entry-meta .edit-link {
   padding: 5px;
 }
 .entry-meta .edit-link a {
-  color: #555555;
+  color: #ffffff;
 }
 
 .line {
@@ -3855,8 +3857,8 @@ article pre {
 }
 .nav-previous a, .nav-next a {
   background-color: #259b24;
-  border: solid 1px rgba(0, 0, 0, 0.42);
-  padding: 15px 40px;
+  border-bottom: solid 3px rgba(0, 0, 0, 0.42);
+  padding: 10px 25px;
   color: #ffffff;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -3868,7 +3870,7 @@ article pre {
   transition-duration: 0.7s;
 }
 .nav-previous a:hover, .nav-next a:hover {
-  background-color: #259b24;
+  background-color: #2F2F2F;
 }
 
 .featured-img {
@@ -3922,6 +3924,26 @@ article pre {
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
+.blogroll .edit-link a {
+  color: #555555;
+}
+
+.content-area-single {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.content-area-single .entry-meta {
+  background: #259b24;
+  padding: 10px;
+  color: #fff;
+  margin: 20px 0;
+}
+.content-area-single .entry-meta > span {
+  padding: 0 10px;
+}
+.content-area-single img {
+  width: 100%;
+}
 
 .comments-area ol {
   list-style: none;
@@ -3958,8 +3980,9 @@ article pre {
 }
 .comments-area #submit {
   background-color: #259b24;
-  border: solid 1px rgba(0, 0, 0, 0.42);
-  padding: 15px 40px;
+  border: none;
+  border-bottom: solid 3px rgba(0, 0, 0, 0.42);
+  padding: 10px 25px;
   color: #ffffff;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -3971,7 +3994,7 @@ article pre {
   transition-duration: 0.7s;
 }
 .comments-area #submit:hover {
-  background-color: #259b24;
+  background-color: #2F2F2F;
 }
 
 .hero {
@@ -4773,6 +4796,10 @@ article pre {
   }
 }
 
+.sidebar-r {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 @media (min-width: 200px) {
   .sidebar-r {
     width: 100%;
@@ -4780,6 +4807,7 @@ article pre {
     margin-left: 0;
     margin-right: 0;
     clear: none;
+    display: none;
   }
 }
 @media (min-width: 750px) {
@@ -4789,6 +4817,7 @@ article pre {
     margin-left: 0;
     margin-right: 0;
     clear: none;
+    display: block;
   }
 }
 @media (min-width: 960px) {
