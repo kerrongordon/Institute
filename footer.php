@@ -34,7 +34,9 @@
 	</section>
 
 </div><!-- #page -->
+<?php if ( is_front_page() ) { ?>
 <script type="text/javascript">(new WOW).init()</script>
+<?php } ?>
 <?php wp_footer(); ?>
 
 </body>

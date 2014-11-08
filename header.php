@@ -16,7 +16,9 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<?php if ( is_front_page() ) { ?>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/vendor/wow.min.js"></script>
+<?php } ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -35,11 +37,35 @@
         </div><!-- container -->
     </section><!-- menu-bar -->
 
-
+ 
+                                        
 
               <?php if ( get_header_image() ) : ?>
-                    <div class="hero" style="background: url(<?php header_image(); ?>);background-repeat: no-repeat;background-repeat: no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: 50% 50%;">
-                        <div class="hero-title">
+                  <?php if ( is_front_page() ) { ?>  
+                    <div class="hero" style="background: url(<?php header_image(); ?>);
+                                             background-repeat: no-repeat; 
+                                             -moz-background-size: cover; 
+                                             -o-background-size: cover; 
+                                             -webkit-background-size: cover; 
+                                             background-size: cover; 
+                                             background-position: 50% 50%;
+                                             <?php echo 'height: 95vh;' ?>">
+                  <?php } else { ?>
+                    <div class="hero" style="background: url(<?php header_image(); ?>);
+                                             background-repeat: no-repeat; 
+                                             -moz-background-size: cover; 
+                                             -o-background-size: cover; 
+                                             -webkit-background-size: cover; 
+                                             background-size: cover; 
+                                             background-position: 50% 50%;
+                                             ">                         
+                  <?php } ?>
+
+                           <?php if ( is_front_page() ) { ?>                  
+                        <div class="hero-title" style="<?php echo 'height: 95vh;' ?>" >
+                        <?php } else { ?>
+                          <div class="hero-title">
+                        <?php } ?>
                             <h1 class="wow zoomInUp">
                                 <?php
                                       if ( is_category() ) :
