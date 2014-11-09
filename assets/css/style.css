@@ -3650,9 +3650,11 @@ div.wpcf7 {
   overflow: hidden;
 }
 
+.menu-item-object-category,
 .menu-item-object-page {
   display: inline-block;
 }
+.menu-item-object-category a,
 .menu-item-object-page a {
   color: #555555;
   display: block;
@@ -3662,6 +3664,7 @@ div.wpcf7 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.menu-item-object-category a:hover,
 .menu-item-object-page a:hover {
   background: #2F2F2F;
   color: #ffffff;
@@ -3815,6 +3818,28 @@ article pre {
 .sidebar-l {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.sidebar-r {
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  color: #888;
+}
+.sidebar-r ul {
+  padding: 0;
+  list-style: none;
+}
+.sidebar-r .widget-title {
+  border-top: 1px dotted #ddd;
+  border-bottom: 1px dotted #ddd;
+  padding: 10px 0;
+}
+
+.widget-title {
+  border-bottom: 4px solid #2F2F2F;
+  padding: 10px 0;
 }
 
 .entry-meta .posted-on a {

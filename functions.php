@@ -59,7 +59,9 @@ function tamcc_setup() {
 	        array(
 	            'primary-menu' => __( 'Primary Menu' ),
 	            'energy-research' => __( 'Energy Research' ),
-	            'solar-solution' => __( 'Solar Solution' )
+	            'solar-solution' => __( 'Solar Solution' ),
+	            'affiliates' => __( 'Affiliates' ),
+	            'renewable-energy-technology' => __( 'Renewable Energy' )
 	        )
 	    );
 	}

@@ -21,4 +21,14 @@
                               'commercial-applications',
                               'home-systems',
                               'catalogue-links-contacts' );
+
+      $affiliates   =  array( 'affiliates',
+                              'international-affiliates',
+                              'local-affiliates',
+                              'regional-affiliates' );
+
+      $renewableEnergyTechnology = array( 'renewable-energy-technology',
+                                          'renewable-energy-technology-local',
+                                          'renewable-energy-technology-regional',
+                                          'renewable-energy-technology-international' );
 ?>

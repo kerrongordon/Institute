@@ -60,6 +60,30 @@
 	}
 }
 
+.sidebar-r {
+	background: #fff;
+	padding: 10px 20px;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	border-radius: 2px;
+	color: #888;
+
+	ul {
+		padding: 0;
+		list-style: none;
+	}
+
+	.widget-title {
+		border-top: 1px dotted #ddd;
+		border-bottom: 1px dotted #ddd;
+		padding: 10px 0;
+	}
+}
+
+.widget-title {
+	border-bottom: 4px solid $copyright-background-color;
+	padding: 10px 0;
+}
+
 .entry-meta {
 	
 

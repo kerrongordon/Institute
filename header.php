@@ -140,6 +140,14 @@
             <?php if ( is_page( $solarsolution ) ) { ?>
                 <?php wp_nav_menu (array('theme_location' => 'solar-solution','menu_class' => 'nav'));?>
             <?php } ?>
+
+            <?php if ( is_category( $affiliates ) ) { ?>
+                <?php wp_nav_menu (array('theme_location' => 'affiliates','menu_class' => 'nav'));?>
+            <?php } ?>
+
+            <?php if ( is_category( $renewableEnergyTechnology ) ) { ?>
+                <?php wp_nav_menu (array('theme_location' => 'renewable-energy-technology','menu_class' => 'nav'));?>
+            <?php } ?>
         </div>
     </div>
 
