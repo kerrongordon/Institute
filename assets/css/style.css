@@ -3227,7 +3227,7 @@ section {
 
 a {
   text-decoration: none;
-  color: #259b24;
+  color: #4caf50;
 }
 
 .logo a {
@@ -3240,7 +3240,7 @@ a {
   width: 100%;
 }
 .spacer .page-title {
-  background: #259b24;
+  background: #4caf50;
   color: #ffffff;
 }
 .spacer h2 {
@@ -3257,10 +3257,16 @@ a {
 }
 
 .menu-bar {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.74);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top: solid 4px #4caf50;
   color: #555;
-  z-index: 999;
-  position: relative;
+  z-index: 555;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .active {
@@ -3337,21 +3343,21 @@ div.wpcf7 {
   color: #555555;
 }
 .wpcf7 .wpcf7-submit {
-  background-color: #259b24;
+  background-color: #4caf50;
   border: solid 1px rgba(0, 0, 0, 0.42);
   padding: 15px 40px;
   color: #ffffff;
 }
 .wpcf7 .wpcf7-submit:hover {
-  background-color: #259b24;
+  background-color: #4caf50;
 }
 
 .footer {
-  background-color: #259b24;
+  background-color: #4caf50;
   overflow: hidden;
 }
 .footer .widget {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .footer .widget ul {
   padding: 0;
@@ -3378,18 +3384,21 @@ div.wpcf7 {
   transition-duration: 0.5s;
 }
 .footer .widget ul li a:hover {
-  background-color: #259b24;
+  background-color: #4caf50;
 }
 .footer .widget h4 {
   color: #ffffff;
   text-transform: uppercase;
+  text-shadow: 1px 1px 1px #555;
 }
 .footer .widget p {
   color: #f4f4f4;
+  text-shadow: 1px 1px 1px rgba(85, 85, 85, 0.5);
 }
 .footer .widget p a {
   color: #58EF5A;
   text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(85, 85, 85, 0.5);
 }
 .footer .widget p a:hover {
   color: #ffffff;
@@ -3412,7 +3421,7 @@ div.wpcf7 {
   transition-duration: 0.5s;
 }
 .footer .widget .tagcloud a:hover {
-  background-color: #259b24;
+  background-color: #4caf50;
 }
 
 .copyright {
@@ -3446,7 +3455,7 @@ div.wpcf7 {
 }
 .section-title:before {
   content: "";
-  border-left: solid 5px #259b24;
+  border-left: solid 5px #4caf50;
   margin-right: 10px;
   opacity: 0.8;
   padding: 20px 0;
@@ -3507,6 +3516,98 @@ div.wpcf7 {
   color: #ffffff;
 }
 
+.main-homeTitle {
+  line-height: 1.2;
+  padding: 60px 0;
+  overflow: hidden;
+}
+.main-homeTitle h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.hometext {
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+.reimportant {
+  line-height: 1.2;
+  padding: 60px 0;
+  overflow: hidden;
+  background-color: #2b2b2b;
+  background: url(../img/reimportant-bg.jpg) 50% 50% no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+.reimportant h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+}
+.reimportant ol {
+  text-align: center;
+  padding: 50px 0;
+}
+.reimportant li {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.highlight {
+  line-height: 1.2;
+  padding: 60px 0;
+  overflow: hidden;
+}
+.highlight h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+}
+.highlight .boxg {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.highlight .boxg .inboxg {
+  font-size: 1rem;
+  border-radius: 2px;
+  min-width: 25em;
+  margin: .5em;
+  padding: .5em;
+  display: inline-block;
+  /* non-flexbox browsers */
+  -webkit-flex: 1 0;
+  flex: 1 0;
+  -moz-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+}
+
+.entry-content p {
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.center,
+.big-h-icons {
+  text-align: center;
+}
+
+.footer-grass {
+  background: url(../img/grass.png) top center repeat-x;
+  height: 39px;
+  margin-top: -33px;
+}
+
 /*--------------------------------------------------------------
  Menus
 --------------------------------------------------------------*/
@@ -3536,7 +3637,7 @@ div.wpcf7 {
 }
 
 .main-navigation ul ul {
-  background: #259b24;
+  background: #4caf50;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
@@ -3558,11 +3659,11 @@ div.wpcf7 {
 }
 
 .main-navigation ul ul :hover > a {
-  background-color: #259b24;
+  background-color: #4caf50;
 }
 
 .main-navigation ul ul a:hover {
-  background-color: #259b24;
+  background-color: #4caf50;
 }
 
 .main-navigation ul li:hover > ul {
@@ -3622,7 +3723,7 @@ div.wpcf7 {
   border: none;
 }
 .widget-area .search-form .search-submit {
-  background-color: #259b24;
+  background-color: #4caf50;
   padding: 10px;
   color: #ffffff;
   margin: 10px 0;
@@ -3646,7 +3747,6 @@ div.wpcf7 {
   margin: 0;
   padding: 0;
   text-align: center;
-  background: #fff;
   overflow: hidden;
 }
 
@@ -3659,6 +3759,7 @@ div.wpcf7 {
   color: #555555;
   display: block;
   padding: 15px 6px;
+  font-size: 12px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -3720,7 +3821,7 @@ div.wpcf7 {
 }
 #tweets .tweet a {
   text-decoration: none;
-  color: #259b24;
+  color: #4caf50;
 }
 #tweets .tweet a:hover {
   color: #ffffff;
@@ -3742,7 +3843,7 @@ article .lean {
   padding: 20px 0;
 }
 article blockquote {
-  border-left: 5px solid #259b24;
+  border-left: 5px solid #4caf50;
   margin: 1.5em 40px;
   padding: 1em 10px;
   quotes: "“" "”" "‘" "’";
@@ -3761,7 +3862,7 @@ article blockquote p {
 }
 article a {
   text-decoration: none;
-  color: #259b24;
+  color: #4caf50;
 }
 article pre {
   background: #F1F0F0;
@@ -3798,6 +3899,15 @@ article pre {
   color: #2F2F2F;
 }
 
+.pixgridder .column .box-img,
+.box-img {
+  height: 250px;
+  width: 250px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
 .widget-area ul li a {
   padding: 5px;
   display: block;
@@ -3811,7 +3921,7 @@ article pre {
   transition-duration: 0.3s;
 }
 .widget-area ul li a:hover {
-  background: #259b24;
+  background: #4caf50;
   color: #ffffff;
 }
 
@@ -3838,7 +3948,7 @@ article pre {
 }
 
 .widget-title {
-  border-bottom: 4px solid #2F2F2F;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.3);
   padding: 10px 0;
 }
 
@@ -3881,7 +3991,7 @@ article pre {
   padding: 15px 0;
 }
 .nav-previous a, .nav-next a {
-  background-color: #259b24;
+  background-color: #4caf50;
   border-bottom: solid 3px rgba(0, 0, 0, 0.42);
   padding: 10px 25px;
   color: #ffffff;
@@ -3979,12 +4089,12 @@ article pre {
   margin: 20px 0;
   padding: 20px;
   border: solid 1px rgba(153, 153, 153, 0.32);
-  box-shadow: -5px 0px 0 #259b24;
+  box-shadow: -5px 0px 0 #4caf50;
   color: #555555;
 }
 .comments-area ol .comment a {
   text-decoration: none;
-  color: #259b24;
+  color: #4caf50;
 }
 .comments-area .comment-author {
   float: left;
@@ -4004,7 +4114,7 @@ article pre {
   font-size: 12;
 }
 .comments-area #submit {
-  background-color: #259b24;
+  background-color: #4caf50;
   border: none;
   border-bottom: solid 3px rgba(0, 0, 0, 0.42);
   padding: 10px 25px;
@@ -4032,7 +4142,7 @@ article pre {
   background-size: cover;
   position: relative;
   overflow: hidden;
-  background-color: #259b24;
+  background-color: #4caf50;
 }
 .hero img {
   position: absolute;
@@ -4053,6 +4163,7 @@ article pre {
 }
 .hero-title h1 {
   font-family: 'Cinzel Decorative', cursive;
+  background: rgba(0, 0, 0, 0.75);
   font-size: 4rem;
   padding: 0 50px;
   font-weight: 400;
@@ -4080,7 +4191,7 @@ article pre {
   padding: 15px 25px;
   margin: 0px 20px 0 0;
   color: #ffffff;
-  background: #259b24;
+  background: #4caf50;
   opacity: 0.8;
 }
 
@@ -4159,7 +4270,7 @@ article pre {
   }
   .main-menu .current-menu-item a,
   .main-menu .current-page-ancestor a {
-    background: #2F2F2F;
+    background: #4caf50;
     color: #ffffff;
   }
   .main-menu ul {
@@ -4174,7 +4285,7 @@ article pre {
     color: #555555;
   }
   .main-menu ul li a:hover {
-    background-color: #2F2F2F;
+    background-color: #4caf50;
   }
 }
 @media (min-width: 960px) {
@@ -4200,7 +4311,7 @@ article pre {
     padding: 20px 15px;
   }
   .main-menu ul li a:hover {
-    background-color: #2F2F2F;
+    background-color: #4caf50;
   }
 }
 

@@ -42,7 +42,7 @@
 
         .current-menu-item a,
         .current-page-ancestor a {
-            background: $copyright-background-color;
+            background: $spacer-background-color;
             color: $font-color-w;
         }
         
@@ -57,7 +57,7 @@
                     color: $font-color;
                     
                     &:hover {
-                        background-color: $copyright-background-color;
+                        background-color: $spacer-background-color;
                     }
                 }
             }
@@ -84,7 +84,7 @@
                 padding: 20px 15px;
                 
                  &:hover {
-                     background-color: $copyright-background-color;
+                     background-color: $spacer-background-color;
                 }
 			 }
 		  }

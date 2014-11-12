@@ -73,3 +73,9 @@ article {
     }
 }
  
+.pixgridder .column .box-img,
+.box-img {
+    height: 250px;
+    width: 250px;
+    @include border-radius( 50% );
+}

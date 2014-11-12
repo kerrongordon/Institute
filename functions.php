@@ -60,11 +60,13 @@ function tamcc_setup() {
 	            'primary-menu' => __( 'Primary Menu' ),
 	            'energy-research' => __( 'Energy Research' ),
 	            'solar-solution' => __( 'Solar Solution' ),
-	            'affiliates' => __( 'Affiliates' ),
-	            'renewable-energy-technology' => __( 'Renewable Energy' )
+	            'affiliates' => __( 'Affiliates' ), 
+	            'renewable-energy-technology' => __( 'Renewable Energy' ),
+	            'education-programs' => __( 'Education Programs' )
 	        )
 	    );
 	}
+
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -118,7 +120,7 @@ function tamcc_setup() {
                 $anc = get_post_ancestors( $post->ID );
                 $title = get_the_title();
                 foreach ( $anc as $ancestor ) {
-                    $output = '<li><a href="'.get_permalink($ancestor).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a></li> <li class="separator"><i class="fa fa-angle-double-right" style="color: #fff;"></i></li>';
+                    $output = '<li><a href="'.get_permalink($ancestor).'" title="'.get_the_title($ancestor).'">'.get_the_title($ancestor).'</a></li> <li class="separator"><i class="fa fa-angle-double-right" style="color: #fff;"></i></li>'. $output;
                 }
                 echo $output;
                 echo '<strong title="'.$title.'"> '.$title.'</strong>';

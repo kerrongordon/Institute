@@ -24,6 +24,8 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
+<div style="height: 70px"></div>
+
 	<section class="menu-bar">
         <div class="container">
             <div class="logo-bar">
@@ -41,17 +43,7 @@
                                         
 
               <?php if ( get_header_image() ) : ?>
-                  <?php if ( is_front_page() ) { ?>  
-                    <div class="hero" style="background: url(<?php header_image(); ?>);
-                                             background-repeat: no-repeat; 
-                                             -moz-background-size: cover; 
-                                             -o-background-size: cover; 
-                                             -webkit-background-size: cover; 
-                                             background-size: cover; 
-                                             background-position: 50% 50%;
-                                             <?php echo 'height: 95vh;' ?>">
-                  <?php } else { ?>
-                    <div class="hero" style="background: url(<?php header_image(); ?>);
+                  <div class="hero" style="background: url(<?php header_image(); ?>);
                                              background-repeat: no-repeat; 
                                              -moz-background-size: cover; 
                                              -o-background-size: cover; 
@@ -59,13 +51,8 @@
                                              background-size: cover; 
                                              background-position: 50% 50%;
                                              ">                         
-                  <?php } ?>
 
-                           <?php if ( is_front_page() ) { ?>                  
-                        <div class="hero-title" style="<?php echo 'height: 95vh;' ?>" >
-                        <?php } else { ?>
-                          <div class="hero-title">
-                        <?php } ?>
+                       <div class="hero-title">
                             <h1 class="wow zoomInUp">
                                 <?php
                                       if ( is_category() ) :
@@ -148,6 +135,10 @@
             <?php if ( is_category( $renewableEnergyTechnology ) ) { ?>
                 <?php wp_nav_menu (array('theme_location' => 'renewable-energy-technology','menu_class' => 'nav'));?>
             <?php } ?>
+
+            <?php if ( is_page( $educationPrograms ) ) { ?>
+                <?php wp_nav_menu (array('theme_location' => 'education-programs','menu_class' => 'nav'));?>
+            <?php } ?>
         </div>
     </div>
 
@@ -169,5 +160,8 @@
     <?php  } ?>
     
 
-
-	<div id="content" class="site-content container">
+<?php if ( is_front_page() ) { ?>  
+	<div id="content" class="site-content">
+<?php } else { ?>
+  <div id="content" class="site-content container">
+<?php } ?>

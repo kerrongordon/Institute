@@ -31,4 +31,11 @@
                                           'renewable-energy-technology-local',
                                           'renewable-energy-technology-regional',
                                           'renewable-energy-technology-international' );
+
+
+      $educationPrograms = array( 'industrial-and-vocational-educational-focus',
+                                  'secondary-and-tertiary-educational',
+                                  'primary-educational-focus',
+                                  'schools-visitation-schedule',
+                                  'renewable-energy-demonstration-facilities' );
 ?>

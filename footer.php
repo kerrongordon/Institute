@@ -7,10 +7,13 @@
  * @package tamcc
  */
 ?>
-	<div class="clearfix"></div>
+	<div class="clearfix">
+		<img style="margin-bottom: -30px;" src="<?php bloginfo('template_url'); ?>/assets/img/eco.svg" alt="">
+		<img style="margin-bottom: -70px;" src="<?php bloginfo('template_url'); ?>/assets/img/bulb.svg" alt="">
+	</div>
 	</div><!-- #content -->
 	
-
+	<div class="footer-grass"></div>
 	<section class="footer">
 		<div class="container">
 	        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('fw-1') ) : ?>
