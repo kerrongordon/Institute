@@ -246,7 +246,7 @@ add_action( 'widgets_init', 'tamcc_widgets_init' );
  */
 function tamcc_scripts() {
 	
-	wp_enqueue_style( 'tamcc-style-main', get_template_directory_uri() . '/assets/css/style.css?v='.time() );
+	wp_enqueue_style( 'tamcc-style-main', get_template_directory_uri() . '/assets/css/style.css' );
 
 	wp_enqueue_style( 'tamcc-style', get_stylesheet_uri() );
 

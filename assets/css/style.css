@@ -175,6 +175,7 @@ dfn {
  */
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -435,6 +436,8 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -703,6 +706,7 @@ textarea {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -920,6 +924,7 @@ textarea {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
+  -webkit-filter: none;
   filter: none;
 }
 
@@ -3032,6 +3037,7 @@ header h1 {
   margin-left: 10px;
   background-color: rgba(211, 104, 104, 0.9);
   background-repeat: no-repeat;
+  -webkit-background-size: 32px 64px;
   background-size: 32px 64px;
   background-image: url("../img/cd-icon-controller.svg");
 }
@@ -3266,6 +3272,7 @@ a {
   border-top: solid 4px #4caf50;
   color: #555;
   z-index: 555;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -3276,12 +3283,8 @@ a {
 .infor-1, .infor-2, .infor-3, .infor-4, .infor-5, .infor-6 {
   text-align: center;
   padding: 40px 0;
-  -moz-transition-property: width;
-  -o-transition-property: width;
   -webkit-transition-property: width;
   transition-property: width;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
@@ -3298,12 +3301,8 @@ a {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
-  -moz-transition-property: all;
-  -o-transition-property: all;
   -webkit-transition-property: all;
   transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
@@ -3374,12 +3373,8 @@ div.wpcf7 {
   color: #f4f4f4;
   display: inline-block;
   text-decoration: none;
-  -moz-transition-property: background;
-  -o-transition-property: background;
   -webkit-transition-property: background;
   transition-property: background;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -3411,12 +3406,8 @@ div.wpcf7 {
   color: #f4f4f4;
   display: inline-block;
   text-decoration: none;
-  -moz-transition-property: background;
-  -o-transition-property: background;
   -webkit-transition-property: background;
   transition-property: background;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -3463,6 +3454,7 @@ div.wpcf7 {
 
 .features img {
   border: solid 3px #fff;
+  -webkit-box-shadow: 0 2px 2px rgba(34, 34, 34, 0.46);
   box-shadow: 0 2px 2px rgba(34, 34, 34, 0.46);
 }
 
@@ -3475,11 +3467,12 @@ div.wpcf7 {
   margin: 60px 0;
   text-align: center;
   display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -moz-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
@@ -3491,9 +3484,9 @@ div.wpcf7 {
   display: inline-block;
   /* non-flexbox browsers */
   -webkit-flex: 1 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0;
   flex: 1 0;
-  -moz-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
@@ -3536,8 +3529,6 @@ div.wpcf7 {
   overflow: hidden;
   background-color: #2b2b2b;
   background: url(../img/reimportant-bg.jpg) 50% 50% no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
   color: #fff;
@@ -3570,8 +3561,11 @@ div.wpcf7 {
 }
 .highlight .boxg {
   display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .highlight .boxg .inboxg {
@@ -3583,9 +3577,9 @@ div.wpcf7 {
   display: inline-block;
   /* non-flexbox browsers */
   -webkit-flex: 1 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0;
   flex: 1 0;
-  -moz-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
@@ -3636,6 +3630,7 @@ div.wpcf7 {
 
 .main-navigation ul ul {
   background: #4caf50;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
@@ -3758,8 +3753,6 @@ div.wpcf7 {
   display: block;
   padding: 15px 6px;
   font-size: 12px;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -3770,8 +3763,6 @@ div.wpcf7 {
 }
 
 .slider {
-  -moz-background-size: cover;
-  -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
@@ -3781,12 +3772,8 @@ div.wpcf7 {
   overflow: hidden;
   position: relative;
   padding: 0;
-  -moz-transition-property: all;
-  -o-transition-property: all;
   -webkit-transition-property: all;
   transition-property: all;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
@@ -3901,20 +3888,14 @@ article pre {
 .box-img {
   height: 250px;
   width: 250px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
 .widget-area ul li a {
   padding: 5px;
   display: block;
-  -moz-transition-property: all;
-  -o-transition-property: all;
   -webkit-transition-property: all;
   transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
@@ -3931,6 +3912,7 @@ article pre {
 .sidebar-r {
   background: #fff;
   padding: 10px 20px;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   color: #888;
@@ -3980,8 +3962,6 @@ article pre {
   width: 100%;
   border-top: solid 1px rgba(255, 255, 255, 0.3);
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
   border-radius: 100%;
 }
 
@@ -3993,12 +3973,8 @@ article pre {
   border-bottom: solid 3px rgba(0, 0, 0, 0.42);
   padding: 10px 25px;
   color: #ffffff;
-  -moz-transition-property: all;
-  -o-transition-property: all;
   -webkit-transition-property: all;
   transition-property: all;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
@@ -4012,8 +3988,6 @@ article pre {
   max-width: 42em;
   height: 200px;
   margin: 0 auto 20px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 .featured-img .wp-post-image {
@@ -4035,11 +4009,12 @@ article pre {
   margin: 60px 0;
   text-align: center;
   display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -moz-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
@@ -4051,9 +4026,9 @@ article pre {
   display: inline-block;
   /* non-flexbox browsers */
   -webkit-flex: 1 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0;
   flex: 1 0;
-  -moz-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
@@ -4087,6 +4062,7 @@ article pre {
   margin: 20px 0;
   padding: 20px;
   border: solid 1px rgba(153, 153, 153, 0.32);
+  -webkit-box-shadow: -5px 0px 0 #4caf50;
   box-shadow: -5px 0px 0 #4caf50;
   color: #555555;
 }
@@ -4117,12 +4093,8 @@ article pre {
   border-bottom: solid 3px rgba(0, 0, 0, 0.42);
   padding: 10px 25px;
   color: #ffffff;
-  -moz-transition-property: all;
-  -o-transition-property: all;
   -webkit-transition-property: all;
   transition-property: all;
-  -moz-transition-duration: 0.7s;
-  -o-transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
@@ -4134,8 +4106,6 @@ article pre {
   width: 100%;
   height: 500px;
   background-repeat: no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
@@ -4153,10 +4123,16 @@ article pre {
 .hero-title {
   height: 500px;
   display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .hero-title h1 {
@@ -4257,12 +4233,8 @@ article pre {
     margin-right: 0;
     clear: none;
     background-color: #2b2b2b;
-    -moz-transition-property: all;
-    -o-transition-property: all;
     -webkit-transition-property: all;
     transition-property: all;
-    -moz-transition-duration: 0.7s;
-    -o-transition-duration: 0.7s;
     -webkit-transition-duration: 0.7s;
     transition-duration: 0.7s;
   }
@@ -4280,7 +4252,7 @@ article pre {
   .main-menu ul li a {
     display: block;
     padding: 10px 0;
-    color: #555555;
+    color: #ffffff;
   }
   .main-menu ul li a:hover {
     background-color: #4caf50;
@@ -4997,8 +4969,6 @@ article pre {
 }
 
 .hero, .hero-title {
-  -moz-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
@@ -5019,8 +4989,6 @@ article pre {
 }
 
 .hero-title h1 {
-  -moz-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
@@ -7852,3 +7820,4 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+/*# sourceMappingURL=style.css.map */
