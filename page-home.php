@@ -44,6 +44,11 @@ get_header(); ?>
 								
 				<div class="boxg">
 				<div class="inboxg">
+				<div class="big-h-icons wow fadeInUpBig">
+					<a href="<?php echo get_site_url(); ?>/projects/energy-research/">
+					<?php include 'assets/img/Purpose.php'; ?>
+					</a>
+				</div>
 				<h3 class="wow fadeInUp">Purpose</h3>
 					<p class="wow fadeInLeft hometext center">
 					Grenada Innovative Renewable Energy Solution Center For Technology Promotion and Transfer in Developing Communities. 
@@ -51,14 +56,18 @@ get_header(); ?>
 				</div>
 
 				<div class="inboxg">
+				<div class="big-h-icons wow fadeInUpBig">
+					<a href="<?php echo get_site_url(); ?>/projects/energy-research/">
+					<?php include 'assets/img/Classification.php'; ?>
+					</a>
+				</div>
 				<h3 class="wow fadeInUp">Classification</h3>
 					<p class="wow fadeInRight hometext center">
 					Educational/Community development -Demonstration/Research, institution for Public/Private solar Training/Product Development, Test center. 
 					</p>
 				</div>
 				</div>
-
-
+			
 			</div>
 		</section>
 

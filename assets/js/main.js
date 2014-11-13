@@ -1,7 +1,7 @@
 (function($) {
    
 	$('.menu-toggle').on('click', function(){
-        $('.menu-main-menu-container').toggleClass('showmenu zoomIn animated');
+        $('.menu-main-menu-container').toggleClass('showmenu fadeInDown animated');
     });
 
       $(window).scroll(function() {

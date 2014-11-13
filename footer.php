@@ -8,8 +8,7 @@
  */
 ?>
 	<div class="clearfix">
-		<img style="margin-bottom: -30px;" src="<?php bloginfo('template_url'); ?>/assets/img/eco.svg" alt="">
-		<img style="margin-bottom: -70px;" src="<?php bloginfo('template_url'); ?>/assets/img/bulb.svg" alt="">
+		<img style="margin-bottom: -10px;" src="<?php bloginfo('template_url'); ?>/assets/img/bulb.svg" alt="">
 	</div>
 	</div><!-- #content -->
 	
